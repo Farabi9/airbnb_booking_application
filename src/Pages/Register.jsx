@@ -8,8 +8,14 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+
+// register function create -------------------------------------
+// -----------------------------------------
   async function registerUser(ev){
     ev.preventDefault();
+
+    // register api use -------------------------
+    // ---------------------------------
     try{
       const url = '/register';
       await axios.post(url, {
