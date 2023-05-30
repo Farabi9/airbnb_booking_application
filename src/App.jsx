@@ -28,6 +28,7 @@ function App() {
       <Route path="/login" element={<LoginPage></LoginPage>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="/account/:subpage?" element={<Account/>}/>
+      <Route path="/account/:subpage/:action" element={<Account/>}/>
       </Route>
     </Routes>
    </Router>
@@ -35,4 +36,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
